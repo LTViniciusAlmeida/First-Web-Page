@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@keyframes animation {
+    
+    0% {background-position-x: 0%;}
+    100% {background-position-x: 100%;}
+}
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --gradient-H1: linear-gradient(to right,#7A572F, #EEAC72, #FFEEC3);
+    --gradient-link: linear-gradient(to left,#7A572F,#EEAC72,#FFEEC3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Serif Display', 'Josefin Slab';
+}
+
+    /* Página Principal - Início */
+
+.container {
+    background-image: linear-gradient(to top, #00060D 0%, #021526 100%);
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    border: solid #f2c89450;
+    padding: 50px 50px;
+}
+
+.identification, .menu, .projects, .web {
+    display: flex;
+    align-items: center;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #FFEEC3;
+    font-size: 2em;
+    border: solid;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.75s;
+}
+.projects-link:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.web-designer {
+    font-size: 32px;
+    text-align: center;
+    color: #FFEEC3;
+    border: solid;
+    padding: 10px 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.web a {
+    text-decoration: none;
+}
+
+.web-designer:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.itens, .itens-link {
+    display: flex;
+    text-decoration: none;
+    color: #F2C894;
+    font-size: 24px;
+    gap: 50px;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.itens-link:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+
+.principal {
+    height: 600px;
+    background-image: url("Img/Earth-Height-652px.jpg");
+}
+
+h1 {
+    font-size: 3em;
+    padding-top: 100px;
+    text-align: center;
+    background-image: var(--gradient-H1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 200%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.skills-redes-sociais {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;
+    height: 180px;
+}
+
+.skills-left, .redes-sociais-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+.skills i {
+    font-size: 2em;
+    border: solid #FFEEC3;
+    padding: 25px;
+    border-radius: 100%;
+    color: #FFEEC3;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+}
+
+.text-skills {
+    display: flex;
+    justify-content: center;
+}
+
+.text-skills p {
+    color: #F2C894;
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.redes-sociais i {
+    font-size: 2em;
+    border: solid #FFEEC3;
+    padding: 25px;
+    border-radius: 100%;
+    color: #FFEEC3;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    cursor: pointer;
+}
+
+.redes-sociais i:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.text-redes-sociais p {
+    color: #F2C894;
+    font-size: 2em;
+    margin-top: 25px;
+}
+
+    /* Página Principal - Fim */
+
+    /* Seção Informações Pessoais - Início */
+
+.informacoes-pessoais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F2C894;
+    gap: 25px;
+    padding: 150px 25px 150px 50px;
+    font-size: 28px;
+    text-align: justify;
+    text-indent: 4em;
+}
+
+
+.matrix-img {
+    margin: 100px;
+    border: 5px solid #FFEEC3;
+    border-radius: 25px;
+}
+
+    /* Seção Informações Pessoais - Fim */
+
+    /* Seção Experiência Profissional - Início */
+
+.experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;
+}
+
+.experiencia-profissional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F2C894;
+    text-align: justify;
+    gap: 25px;
+    padding: 150px 25px 150px 50px;
+    font-size: 28px;
+}
+
+.militar-img {
+    margin: 100px;
+    border: 5px solid #FFEEC3;
+    border-radius: 25px;
+}
+
+    /* Seção Experiência Profissional - Fim */
+
+    /* Seção Histórico Acadêmico - Início */
+
+.historico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;
+}
+
+.historico-academico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F2C894;
+    text-align: justify;
+    gap: 25px;
+    padding: 150px 25px 25px 25px;
+    font-size: 28px;
+}
+
+.universidade img {
+    display: inline;
+    border: 5px solid #FFEEC3;
+    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+}
+
+    /* Seção Histórico Acadêmico - Fim */
+
+    /* Seção Projetos e Depoimentos - Início */
+
+.projetos-depoimentos {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;
+    padding: 25px;
+}
+
+.projeto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.nome-link {
+    text-decoration: none;
+    color: #FFEEC3;
+    text-align: center;
+    font-size: 28px;
+    border: solid #FFEEC3;
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+}
+.nome-link:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nome img {
+    width: max-content;
+    height: max-content;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 25px 150px 25px 0;
+}
+
+.img-logo-link {
+    transition: 0.75s;
+}
+
+.logo:hover > .img-logo-link {
+    transform: scale(1.2);
+    transition: 0.75s;
+}
+
+.img {
+    border: solid #FFEEC3;
+}
+
+.img-playstation {
+    width: 256px;
+    height: 256px;
+    background-image: var(--gradient-link);
+}
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 28px;
+    margin: 25px;
+}
+
+.paragrafo {
+    font-family: 'Cookie', 'Great Vibes', 'cursive';
+    font-size: 32px;
+    text-align: justify;
+    color: #FFEEC3;
+    font-style: italic;
+    font-weight: normal;
+    width: 90%;
+    border: solid #FFEEC3;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.75s;
+}
+
+.paragrafo span {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.depoimento:hover > .paragrafo {
+    transform: scale(1.2);
+    transition: 0.75s;
+}
+
+.orcamento-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    padding: 100px;
+    border: solid #f2c89450;
+}
+
+.orcamento-div h2 {
+    font-size: 32px;
+    color: #FFEEC3;
+    border: 5px solid #00060D;
+    background-color: #00060D;
+    padding: 25px 50px 25px 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.orcamento-div:hover > h2 {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
+    border: solid #f2c89450;   
+}
+
+.links-sm a {
+    display: inline-block;
+    font-size: 2em;
+    border: solid #FFEEC3;
+    padding: 25px;
+    border-radius: 100%;
+    color: #FFEEC3;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 25px 0 25px 0;
+}
+
+.links-sm a:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* .links-contat-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid yellow;
+} */
+
+.links-contat ul li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    color: #FFEEC3;
+}
+
+.contato i {
+    font-size: 1em;
+    border: solid #FFEEC3;
+    padding: 25px;
+    border-radius: 100%;
+    color: #FFEEC3;
+    cursor: pointer;
+    margin: 5px 25px 5px 25px;
+}
+
+.contato i:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.contato h2:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contato h2 {
+    font-size: 1.5em;
+}
+
+.links-formas-de-pagamento i {
+    font-size: 2em;
+    border: solid #FFEEC3;
+    padding: 25px;
+    border-radius: 100%;
+    color: #FFEEC3;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+}
+
+.links-formas-de-pagamento i:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.trademark {
+    font-size: 1em;
+    text-align: justify;
+    color: #FFEEC3;
+    margin: 10px 0 10px 0;
+}
+
+
+    /* Seção Projetos e Depoimentos - Fim */
+
+    /* Seção Footer - Início */
+
+.material-symbols-outlined {
+    font-size: 4em;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 100;
+    color: #F2C894;
+    border: solid #F2C894;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.material-symbols-outlined:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;    
+}
