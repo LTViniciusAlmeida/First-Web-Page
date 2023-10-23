@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@keyframes animation {
-    
+@keyframes animation {   
     0% {background-position-x: 0%;}
     100% {background-position-x: 100%;}
 }
@@ -25,7 +24,7 @@ body {
     font-family: 'Roboto', 'Noto Serif Display', 'Josefin Slab';
 }
 
-    /* Página Principal - Início */
+/* Página Principal - Início */
 
 .container {
     background-image: linear-gradient(to top, #00060D 0%, #021526 100%);
@@ -36,63 +35,46 @@ body {
     padding: 50px 50px;
 }
 
-.identification, .menu, .projects, .web {
+.menu-left, .menu-center, .menu-right {
     display: flex;
     align-items: center;
 }
 
-.projects a {
-    text-decoration: none;
-    color: #FFEEC3;
-    font-size: 2em;
-    border: solid;
-    padding: 10px;
-    border-radius: 50px;
-    transition: 0.75s;
-}
-.projects-link:hover {
-    background-image: var(--gradient-link);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transform: scale(1.1);
-    transition: 0.75s;
+.menu-left__link {
+    padding: 10px 20px 20px;
 }
 
-.web-designer {
-    font-size: 32px;
-    text-align: center;
-    color: #FFEEC3;
-    border: solid;
-    padding: 10px 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
+.menu-center__itens {
+    gap: 50px;
 }
 
-.web a {
-    text-decoration: none;
-}
-
-.web-designer:hover {
-    background-image: var(--gradient-link);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transform: scale(1.1);
-    transition: 0.75s;
-}
-
-.itens, .itens-link {
+.menu-center__itens, .menu-center__li {
     display: flex;
+}
+
+.menu-center__link {
     text-decoration: none;
     color: #F2C894;
     font-size: 24px;
-    gap: 50px;
     cursor: pointer;
     transition: 0.75s;
 }
 
-.itens-link:hover {
+.menu-right__link {
+    padding: 10px;
+}
+
+.menu-left__link, .menu-right__link {
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    color: #FFEEC3;
+    border: solid;
+    border-radius: 50px;
+    transition: 0.75s;
+}
+
+.menu__link--efeito:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
@@ -101,12 +83,12 @@ body {
     transition: 0.75s;
 }
 
-.principal {
+.banner {
     height: 600px;
     background-image: url("Img/Earth-Height-652px.jpg");
 }
 
-h1 {
+.banner__txt {
     font-size: 3em;
     padding-top: 100px;
     text-align: center;
@@ -120,6 +102,8 @@ h1 {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+/* Inserção do BEM aplicada até este ponto */
 
 .skills-redes-sociais {
     display: flex;
