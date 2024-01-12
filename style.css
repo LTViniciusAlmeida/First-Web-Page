@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@keyframes animation {   
-    0% {background-position-x: 0%;}
-    100% {background-position-x: 100%;}
+@keyframes animation {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
 }
 
 * {
@@ -12,8 +17,8 @@
 }
 
 :root {
-    --gradient-H1: linear-gradient(to right,#7A572F, #EEAC72, #FFEEC3);
-    --gradient-link: linear-gradient(to left,#7A572F,#EEAC72,#FFEEC3);
+    --gradient-H1: linear-gradient(to right, #7A572F, #EEAC72, #FFEEC3);
+    --gradient-link: linear-gradient(to left, #7A572F, #EEAC72, #FFEEC3);
 }
 
 html {
@@ -35,24 +40,27 @@ body {
     padding: 50px 50px;
 }
 
-.menu-left, .menu-center, .menu-right {
+.container__left,
+.container__center,
+.container__right {
     display: flex;
     align-items: center;
 }
 
-.menu-left__link {
+.container__left-link {
     padding: 10px 20px 20px;
 }
 
-.menu-center__itens {
+.container__center-list {
     gap: 50px;
 }
 
-.menu-center__itens, .menu-center__li {
+.container__center-list,
+.container__center-li {
     display: flex;
 }
 
-.menu-center__link {
+.container__center-link {
     text-decoration: none;
     color: #F2C894;
     font-size: 24px;
@@ -60,11 +68,12 @@ body {
     transition: 0.75s;
 }
 
-.menu-right__link {
+.container__right-link {
     padding: 10px;
 }
 
-.menu-left__link, .menu-right__link {
+.container__left-link,
+.container__right-link {
     text-decoration: none;
     font-size: 2em;
     text-align: center;
@@ -74,7 +83,7 @@ body {
     transition: 0.75s;
 }
 
-.menu__link--efeito:hover {
+.container__link--effect:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
@@ -103,9 +112,7 @@ body {
     animation-direction: alternate;
 }
 
-/* Inserção do BEM aplicada até este ponto */
-
-.skills-redes-sociais {
+.banner__skills-social-midia {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
@@ -113,7 +120,8 @@ body {
     height: 180px;
 }
 
-.skills-left, .redes-sociais-right {
+.banner__skills,
+.banner__social-midia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,14 +129,14 @@ body {
     width: 100%;
 }
 
-.skills {
+.banner__skills-icons {
     display: flex;
     justify-content: center;
     gap: 25px;
-    
+
 }
 
-.skills i {
+.banner__skills-icons i {
     font-size: 2em;
     border: solid #FFEEC3;
     padding: 25px;
@@ -137,24 +145,24 @@ body {
     background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
 }
 
-.text-skills {
+.banner__txt-skills {
     display: flex;
     justify-content: center;
 }
 
-.text-skills p {
+.banner__txt-skills p {
     color: #F2C894;
     font-size: 2em;
     margin-top: 25px;
 }
 
-.redes-sociais {
+.banner__social-midia-icons {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
-.redes-sociais i {
+.banner__social-midia-icons i {
     font-size: 2em;
     border: solid #FFEEC3;
     padding: 25px;
@@ -164,29 +172,32 @@ body {
     cursor: pointer;
 }
 
-.redes-sociais i:hover {
+.banner__skills-icons i:hover,
+.banner__social-midia-icons i:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.text-redes-sociais {
+.banner__txt-social-midia {
     display: flex;
     justify-content: center;
 }
 
-.text-redes-sociais p {
+.banner__txt-social-midia p {
     color: #F2C894;
     font-size: 2em;
     margin-top: 25px;
 }
 
-    /* Página Principal - Fim */
+/* Página Principal - Fim */
 
-    /* Seção Informações Pessoais - Início */
+/* Seção Informações Pessoais - Início */
 
-.informacoes-pessoais {
+.about-me {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +205,7 @@ body {
     border: solid #f2c89450;
 }
 
-.sobre-mim {
+.about-me__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,17 +218,19 @@ body {
 }
 
 
-.matrix-img {
+.about-me__matrix-img {
     margin: 100px;
     border: 5px solid #FFEEC3;
     border-radius: 25px;
 }
 
-    /* Seção Informações Pessoais - Fim */
+/* Seção Informações Pessoais - Fim */
 
-    /* Seção Experiência Profissional - Início */
+/* Seção Experiência Profissional - Início */
 
-.experiencia {
+.experience {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,7 +238,7 @@ body {
     border: solid #f2c89450;
 }
 
-.experiencia-profissional {
+.experience__professional {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,17 +250,19 @@ body {
     font-size: 28px;
 }
 
-.militar-img {
+.experience__militar-img {
     margin: 100px;
     border: 5px solid #FFEEC3;
     border-radius: 25px;
 }
 
-    /* Seção Experiência Profissional - Fim */
+/* Seção Experiência Profissional - Fim */
 
-    /* Seção Histórico Acadêmico - Início */
+/* Seção Histórico Acadêmico - Início */
 
-.historico {
+.historic {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,7 +271,7 @@ body {
     border: solid #f2c89450;
 }
 
-.historico-academico {
+.historic__academic {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,7 +283,7 @@ body {
     font-size: 28px;
 }
 
-.universidade img {
+.historic__university img {
     display: inline;
     border: 5px solid #FFEEC3;
     border-radius: 25px;
@@ -277,11 +292,11 @@ body {
     margin: 50px;
 }
 
-    /* Seção Histórico Acadêmico - Fim */
+/* Seção Histórico Acadêmico - Fim */
 
-    /* Seção Projetos e Depoimentos - Início */
+/* Seção Projetos e Depoimentos - Início */
 
-.projetos-depoimentos {
+.projects {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
@@ -289,7 +304,7 @@ body {
     padding: 25px;
 }
 
-.projeto {
+.projects__website {
     width: 100%;
     height: 100%;
     display: flex;
@@ -297,14 +312,14 @@ body {
     justify-content: space-evenly;
 }
 
-.nome {
+.projects__brand {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
 }
 
-.nome-link {
+.projects__website-link {
     text-decoration: none;
     color: #FFEEC3;
     text-align: center;
@@ -314,45 +329,41 @@ body {
     padding: 50px;
     cursor: pointer;
 }
-.nome-link:hover {
+
+.projects__website-link:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.nome img {
-    width: max-content;
-    height: max-content;
-}
-
-.logo {
+.projects__logo {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 25px 150px 25px 0;
 }
 
-.img-logo-link {
+.projects__logo-img-link {
     transition: 0.75s;
 }
 
-.logo:hover > .img-logo-link {
+.projects__logo:hover>.projects__logo-img-link {
     transform: scale(1.2);
     transition: 0.75s;
 }
 
-.img {
+.projects__logo-img {
     border: solid #FFEEC3;
 }
 
-.img-playstation {
+.projects__logo-img--playstation {
     width: 256px;
     height: 256px;
     background-image: var(--gradient-link);
 }
 
-.depoimento {
+.projects__assessment {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +372,7 @@ body {
     margin: 25px;
 }
 
-.paragrafo {
+.projects__assessment-txt {
     font-family: 'Cookie', 'Great Vibes', 'cursive';
     font-size: 32px;
     text-align: justify;
@@ -375,19 +386,21 @@ body {
     transition: 0.75s;
 }
 
-.paragrafo span {
+.assessment__txt span {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.depoimento:hover > .paragrafo {
+.assessment:hover>.assessment__txt {
     transform: scale(1.2);
     transition: 0.75s;
 }
 
-.orcamento-section {
+.budgets {
+    height: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,7 +409,7 @@ body {
     border: solid #f2c89450;
 }
 
-.orcamento-div h2 {
+.budgets__container>h2 {
     font-size: 32px;
     color: #FFEEC3;
     border: 5px solid #00060D;
@@ -406,7 +419,7 @@ body {
     transition: 0.5s;
 }
 
-.orcamento-div:hover > h2 {
+.budgets__container:hover>h2 {
     transform: scale(1.2);
     transition-duration: 0.5s;
     background-image: var(--gradient-link);
@@ -417,14 +430,16 @@ body {
 }
 
 .footer {
+    height: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to bottom, #00060D 0%, #021526 100%);
-    border: solid #f2c89450;   
+    border: solid #f2c89450;
 }
 
-.links-sm a {
+.footer__links-sm a {
     display: inline-block;
     font-size: 2em;
     border: solid #FFEEC3;
@@ -436,21 +451,21 @@ body {
     margin: 25px 0 25px 0;
 }
 
-.links-sm a:hover {
+.footer__links-sm a:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-/* .links-contat-ul {
+/* .footer__links-contact-ul {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid yellow;
 } */
 
-.links-contat ul li a {
+.footer__links-contact ul li a {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -458,7 +473,7 @@ body {
     color: #FFEEC3;
 }
 
-.contato i {
+.footer__contact i {
     font-size: 1em;
     border: solid #FFEEC3;
     padding: 25px;
@@ -468,24 +483,25 @@ body {
     margin: 5px 25px 5px 25px;
 }
 
-.contato i:hover {
-    background-image: var(--gradient-link);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.contato h2:hover {
+.footer__contact i:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.contato h2 {
+.footer__contact h2:hover {
+    background-image: var(--gradient-link);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer__contact h2 {
     font-size: 1.5em;
 }
 
-.links-formas-de-pagamento i {
+.footer__payment-method i {
     font-size: 2em;
     border: solid #FFEEC3;
     padding: 25px;
@@ -496,14 +512,14 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-.links-formas-de-pagamento i:hover {
+.footer__payment-method i:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.trademark {
+.footer__trademark {
     font-size: 1em;
     text-align: justify;
     color: #FFEEC3;
@@ -511,11 +527,11 @@ body {
 }
 
 
-    /* Seção Projetos e Depoimentos - Fim */
+/* Seção Projetos e Depoimentos - Fim */
 
-    /* Seção Footer - Início */
+/* Seção Footer - Início */
 
-.material-symbols-outlined {
+.icon-up {
     font-size: 4em;
     position: fixed;
     right: 50px;
@@ -527,9 +543,9 @@ body {
     border-radius: 25px;
 }
 
-.material-symbols-outlined:hover {
+.icon-up:hover {
     background-image: var(--gradient-link);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;    
+    color: transparent;
 }
