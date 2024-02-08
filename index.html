@@ -24,7 +24,7 @@
         </div>
         <div class="container__center">
             <nav>
-                <ul class="container__center-list">
+                <ul class="container__center-list-box">
                     <li class="container__center-li">
                         <a href="#about-me-link" class="container__center-link container__link--effect">Informações
                             Pessoais</a>
@@ -46,16 +46,16 @@
         </div>
     </header>
 
+    <section class="banner">
+        <h1 class="banner__txt">Sonhos sem objetivos, são apenas sonhos. No caminho, para alcançar seus sonhos, você
+            deve aplicar disciplina. Mas, mais importante ainda, consistência. Porque, sem compromisso, você nunca
+            vai começar, mas, sem consistência, nunca vai terminar.
+        </h1>
+    </section>
+
+    <!-- Inserção do BEM aplicada até este ponto -->
+
     <main>
-        <section class="banner">
-            <h1 class="banner__txt">Sonhos sem objetivos, são apenas sonhos. No caminho, para alcançar seus sonhos, você
-                deve aplicar disciplina. Mas, mais importante ainda, consistência. Porque, sem compromisso, você nunca
-                vai começar, mas, sem consistência, nunca vai terminar.
-            </h1>
-        </section>
-
-        <!-- Inserção do BEM aplicada até este ponto -->
-
         <section class="banner__skills-social-midia">
             <div class="banner__skills">
                 <div class="banner__skills-icons">
@@ -99,8 +99,8 @@
                 <p>Sou apaixonado por tecnologia e possuo muita facilidade em aprender, densevolver e solucionar
                     projetos.</p>
             </div>
-            <div>
-                <div>
+            <div class="about-me__matrix-img-box-relative">
+                <div class="about-me__matrix-img-box-absolute">
                     <img src="Img/Sobre-mim.png"
                         alt="Imagem de um notebok apresentando um código de programação semelhante aos códigos exibidos no filme Matrix"
                         aria-label="Imagem de um notebook apresentando um código de programação"
@@ -116,14 +116,17 @@
         <section class="experience" id="experience-link">
             <div class="experience__professional">
                 <h2>Experiência Profissional</h2>
-                <p>2014 - 2023 - Militar.</p>
-                <p>Condecorações, referências elogiosas e elogios individuais.</p>
-                <p>julho de 2023 - presente: Front-End Developer.</p>
+                <p>2014 - 2023 - Militar</p>
+                <p>Condecorações, referências elogiosas e elogios individuais</p>
+                <p>2023 - Front-End Developer</p>
+                <p>HTML, CSS e JavaScript</p>
             </div>
-            <div>
-                <img src="Img/Experiência-Profissional.png"
-                    alt="Foto pessoal do desenvolvedor WEB em sua carreira militar realizando disparos de precisão"
-                    class="experience__militar-img">
+            <div class="experience__militar-img-box-relative">
+                <div class="experience__militar-img-box-absolute">
+                    <img src="Img/Experiência-Profissional.png"
+                        alt="Foto pessoal do desenvolvedor WEB em sua carreira militar realizando disparos de precisão"
+                        class="experience__militar-img">
+                </div>
             </div>
         </section>
         <section class="historic" id="historic-link">
@@ -151,13 +154,15 @@
                         title="clique aqui para ver o projeto">Play Station</a>
                 </div>
                 <div class="projects__logo">
-                    <a href="https://youtu.be/RkC0l4iekYo?feature=shared" target="_blank" class="projects__logo-img-link"
+                    <a href="https://youtu.be/RkC0l4iekYo?feature=shared" target="_blank"
+                        class="projects__logo-img-link"
                         title="Clique aqui para conhecer o console Play Station, vídeogame mais famoso do mundo"><img
                             src="Img/PlayStation Logo 3.png" alt="logo do console Play Station"
                             class="projects__logo-img projects__logo-img--playstation"></a>
                 </div>
                 <div class="projects__assessment">
-                    <p class="projects__assessment-txt">"We're honoured to be awarding Mr. Almeida with the 2023 BAFTA Games Fellowship
+                    <p class="projects__assessment-txt">"We're honoured to be awarding Mr. Almeida with the 2023 BAFTA
+                        Games Fellowship
                         - BAFTA's highest accolade for the incredible impact he has had in the Front-End developing. He
                         has an extraordinary uncommon skills. Thank you for your services" (<span>Jim Ryan SIE, Sony
                             Interactive Entertainment president and CEO</span>)</p>
@@ -169,13 +174,15 @@
                         title="clique aqui para ver o projeto">Lineage 2</a>
                 </div>
                 <div class="projects__logo">
-                    <a href="https://youtu.be/Lopm7XkaLco?feature=shared" target="_blank" class="projects__logo-img-link"><img
-                            src="Img/Lineage 2 Logo.png" alt="logo do jogo MMORPG Lineage 2"
+                    <a href="https://youtu.be/Lopm7XkaLco?feature=shared" target="_blank"
+                        class="projects__logo-img-link"><img src="Img/Lineage 2 Logo.png"
+                            alt="logo do jogo MMORPG Lineage 2"
                             title="Clique aqui para conhecer esse fantástico jogo e assistir seu trailer"
                             class="projects__logo-img"></a>
                 </div>
                 <div class="projects__assessment">
-                    <p class="projects__assessment-txt">"Mr. Almeida offers a powerful suite of tools that every games's enterprise
+                    <p class="projects__assessment-txt">"Mr. Almeida offers a powerful suite of tools that every games's
+                        enterprise
                         team must have. And if you get stuck, his support will help out. I'm using the services of Mr.
                         Almeida to manage the entire inbound process. It's a fantatisc experience for our gamers."
                         (<span>Kim Taek Jin, Executive Director at NCSoft</span>)</p>
@@ -187,13 +194,14 @@
                         title="clique aqui para ver o projeto">EOTECH</a>
                 </div>
                 <div class="projects__logo">
-                    <a href="https://youtu.be/9wmf6mcUWRA?feature=shared" target="_blank" class="projects__logo-img-link"><img
-                            src="Img/Eotech Logo.png" alt="logo da marca bélica EOTECH"
+                    <a href="https://youtu.be/9wmf6mcUWRA?feature=shared" target="_blank"
+                        class="projects__logo-img-link"><img src="Img/Eotech Logo.png" alt="logo da marca bélica EOTECH"
                             title="Clique aqui para conhecer a marca EOTECH, utilizada pelos Navy Seals nos USA"
                             class="projects__logo-img"></a>
                 </div>
                 <div class="projects__assessment">
-                    <p class="projects__assessment-txt">"Our inbound leads have grown so dramatically from our website and search
+                    <p class="projects__assessment-txt">"Our inbound leads have grown so dramatically from our website
+                        and search
                         optimization that we have hired a dedicated sales team that now only works on inbound leads.
                         That was never the case before hosting and running our website with Mr. Almeida." (<span>Matt
                             Van Haaren, CEO EOTECH</span>)</p>
@@ -202,7 +210,34 @@
         </section>
         <section class="budgets" id="budgets">
             <div class="budgets__container">
-                <h2>Solicite um orçamento para construir o site dos seus sonhos e turbinar seu projeto</h2>
+                <h2>Quer construir o site dos seus sonhos?</h2>
+            </div>
+            <div class="budgets__forms">
+                <div class="budgets__forms-box">
+                    <form action="">
+                        <div class="budgets__input-box">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="budgets__input-box">
+                            <input type="number" name="cellphone" id="cellphone">
+                            <label for="cellphone">Telefone</label>
+                            <span class="budgets__forms-icon"><i class="fa-solid fa-mobile"></i></span>
+                        </div>
+                        <div class="budgets__input-box">
+                            <input type="email" name="email" id="email">
+                            <label for="email">E - mail</label>
+                            <span class="budgets__forms-icon"><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        <div class="budgets__txt-box">
+                            <textarea class="budgets__txt-area" name="txt-area" id="txt-area" cols="30"
+                                rows="10"></textarea>
+                        </div>
+                        <div class="budgets__btn-box">
+                            <button class="budgets__btn" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -220,7 +255,7 @@
                         alt="Você será direcionado ao WhatsApp Web para contato"
                         title="Você será direcionado ao WhatsApp Web para contato" class="footer__contact">
                         <i class="fa-brands fa-whatsapp"></i>
-                        <h2>Mande uma mensagem por WhatsApp clicando na logo</h2>
+                        <h2>Mande uma mensagem por WhatsApp</h2>
                     </a>
                 </li>
                 <li>
@@ -254,8 +289,8 @@
 
     <!-- Seção de  - Início -->
 
-    <a href="#" class="up-icon">
-        <span class="material-symbols-outlined icon-up">north</span>
+    <a href="#" class="icon">
+        <span class="material-symbols-outlined icon__up">north</span>
     </a>
 
 </body>
