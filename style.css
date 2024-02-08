@@ -506,7 +506,7 @@ nav {
 
 .budgets__forms-box {
     position: relative;
-    width: 400px;
+    max-width: 450px;
     height: 550px;
     background: transparent;
     border-radius: 20px;
@@ -531,7 +531,7 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 310px;
+    max-width: 310px;
     margin: 20px 0 0 0;
     border-bottom: 2px solid #fff;
     /* border: 1px solid blue; */
@@ -576,14 +576,14 @@ form {
 }
 
 .budgets__txt-box {
-    margin: 15px 0 0 0;
-    width: 310px;
+    margin: 15px;
+    max-width: 310px;
     /* border: 1px solid green; */
 }
 
 .budgets__txt-area {
-    height: 100%;
     width: 100%;
+    height: 100%;
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 10px;
@@ -594,8 +594,8 @@ form {
 }
 
 .budgets__btn-box {
-    margin: 15px 0 0 0;
     width: 310px;
+    margin: 15px;
 }
 
 .budgets__btn {
@@ -751,6 +751,7 @@ form {
     .container__left,
     .container__center,
     .container__right {
+        justify-content: center;
         width: 100%;
         margin: 10px auto;
         /* border: 1px solid yellow; */
@@ -1000,12 +1001,17 @@ form {
         width: 90%;
     }
 
+    .footer {
+        max-width: 360px;
+        min-height: 100vh;
+    }
+
     .footer__links-sm {
+        width: 90%;
         display: flex;
         justify-content: center;
         gap: 10px;
         border: 0.5px solid #FFEEC3;
-        width: 90%;
         margin: 10px;
         border-radius: 10px;
     }
@@ -1016,37 +1022,40 @@ form {
     }
 
     .footer__links-contact {
-        border: 0.5px solid #FFEEC3;
         width: 90%;
+        height: 100%;
+        border: 0.5px solid #FFEEC3;
         margin: 10px;
         border-radius: 10px;
-        border: 1px solid blue;
     }
 
     .footer__links-contact ul {
-        border: 1px solid yellow;
+        width: 100%;
+        height: 100%;
     }
 
     .footer__links-contact ul li {
-        border: 1px solid orange;
+        width: 100%;
+        height: 100%;
     }
 
     .footer__links-contact ul li a {
+        width: 100%;
+        height: 100%;
         display: block;
         text-align: center;
-        color: #FFEEC3;
-        gap: 10px;
-        margin: 10px 0;
+        margin: 10px;
         border: 1px solid red;
     }
 
     .footer__links-contact ul li a h2 {
-        display: block;
-        height: 50px;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
         border: 1px solid green;
     }
 
-    .footer__contact i {
+    .footer__links-contact ul li a i {
         border-width: 0.5px;
     }
 
