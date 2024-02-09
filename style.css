@@ -995,7 +995,7 @@ form {
     }
 
     .footer {
-        max-width: 360px;
+        min-width: 360px;
         min-height: 100vh;
     }
 
