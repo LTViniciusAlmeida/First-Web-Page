@@ -641,13 +641,6 @@ form {
     color: transparent;
 }
 
-/* .footer__links-contact-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid yellow;
-} */
-
 .footer__links-contact ul li a {
     display: flex;
     justify-content: start;
@@ -1037,22 +1030,32 @@ form {
     .footer__links-contact ul li {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer__links-contact ul li a {
         width: 100%;
         height: 100%;
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 10px;
-        border: 1px solid red;
     }
 
-    .footer__links-contact ul li a h2 {
+    .footer__links-contact ul li a p {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bolder;
+        color: #FFEEC3;
         margin: 10px;
-        border: 1px solid green;
     }
 
     .footer__links-contact ul li a i {
