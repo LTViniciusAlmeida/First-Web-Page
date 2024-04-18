@@ -150,11 +150,11 @@ nav {
 
 .banner__skills,
 .banner__social-midia {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .banner__skills-icons {
@@ -316,11 +316,11 @@ nav {
 }
 
 .historic__university img {
+    width: 250px;
+    height: 150px;
     display: inline;
     border: 5px solid #FFEEC3;
     border-radius: 25px;
-    width: 250px;
-    height: 150px;
     margin: 50px;
 }
 
@@ -397,22 +397,22 @@ nav {
 }
 
 .projects__assessment {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     font-size: 28px;
     margin: 25px auto;
 }
 
 .projects__assessment-txt {
+    width: 90%;
     font-family: 'Cookie', 'Great Vibes', 'cursive';
     font-size: 32px;
     text-align: justify;
     color: #FFEEC3;
     font-style: italic;
     font-weight: normal;
-    width: 90%;
     border: solid #FFEEC3;
     border-radius: 10px;
     padding: 25px;
@@ -487,8 +487,8 @@ nav {
 }
 
 .budgets__forms {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
